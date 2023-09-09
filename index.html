@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/1cbbb02fe6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="./assets/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/owl/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-xl">
+        <div class="wrapper py-3">
+          <div class="logo">
+            <a href="">Logo</a>
+          </div>
+          <div class="search d-lg-block d-none">
+            <input type="text" placeholder="search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="user d-lg-block d-none">
+            <i class="fa-regular fa-user"></i>
+          </div>
+
+          <label for="menu-btn" class="btn menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+        <div class="container-xl pb-2">
+          <!-- ------ For small device -->
+          <div
+            class="d-lg-none d-flex align-items-center justify-content-between"
+          >
+            <div class="search">
+              <input type="text" placeholder="search" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="user">
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"
+              ><i class="fa-solid fa-xmark"></i
+            ></label>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#" class="desktop-item">Mobiles</a>
+              <input type="checkbox mb-5" id="showDrop1" />
+              <label for="showDrop1" class="mobile-item">Mobiles</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Laptops</a>
+              <input type="checkbox mb-5" id="showDrop2" />
+              <label for="showDrop2" class="mobile-item">Laptops</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Tablets</a>
+              <input type="checkbox mb-5" id="showDrop3" />
+              <label for="showDrop3" class="mobile-item">Laptops</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Tv</a>
+              <input type="checkbox mb-5" id="showDrop4" />
+              <label for="showDrop4" class="mobile-item">TV</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Smartwatches</a>
+              <input type="checkbox mb-5" id="showDrop5" />
+              <label for="showDrop5" class="mobile-item">Smartwatches</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Printers</a>
+              <input type="checkbox mb-5" id="showDrop6" />
+              <label for="showDrop6" class="mobile-item">Printers</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Appliances</a>
+              <input type="checkbox mb-5" id="showDrop7" />
+              <label for="showDrop7" class="mobile-item">Appliances</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">News</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ------- Categories -->
+    <section class="container-xl mt_7 category">
+      <div class="bg-white rounded-2">
+        <h4 class="title">Explore Categories</h4>
+        <div class="py-2 px-3 d-flex justify-content-between flex-wrap">
+          <div class="category-items">
+            <div class="box mb-5">
+              <img src="./images/asaus (2).png" alt="" />
+              <p>Laptops</p>
+            </div>
+          </div>
+          <div class="category-items">
+            <div class="box mb-5">
+              <img src="./images/img (6).png" alt="" />
+              <p>Laptops</p>
+            </div>
+          </div>
+          <div class="category-items">
+            <div class="box mb-5">
+              <img src="./images/img (10).png" alt="" />
+              <p>Laptops</p>
+            </div>
+          </div>
+          <div class="category-items">
+            <div class="box mb-5">
+              <img src="./images/img (10).png" alt="" />
+              <p>Laptops</p>
+            </div>
+          </div>
+          <div class="category-items">
+            <div class="box mb-5">
+              <img src="./images/img (10).png" alt="" />
+              <p>Laptops</p>
+            </div>
+          </div>
+          <div class="category-items">
+            <div class="box mb-5">
+              <img src="./images/img (6).png" alt="" />
+              <p>Laptops</p>
+            </div>
+          </div>
+          <div class="category-items">
+            <div class="box mb-5">
+              <img src="./images/img (10).png" alt="" />
+              <p>Laptops</p>
+            </div>
+          </div>
+          <div class="category-items">
+            <div class="box mb-5">
+              <img src="./images/img (7).png" alt="" />
+              <p>Laptops</p>
+            </div>
+          </div>
+        </div>
+        <div class="px-3">
+          <button class="btn mb-3">See All</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- Latest Device -->
+    <section class="container-xl mt_7 latest">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div class="bg-white rounded-2">
+            <h4 class="title">Latest Mobiles</h4>
+            <div class="px-3 py-3 overflow-x-auto list">
+              <ul class="d-flex gap-4">
+                <li>
+                  <a href="" class="active">Mobiles</a>
+                </li>
+                <li>
+                  <a href="">Laptops</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-3 py-3">
+              <div class="latest_device_carousel owl-carousel owl-theme">
+                <div class="card p-3">
+                  <img src="./images/img (10).png" alt="" />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-price">$ 11, 499</p>
+                    <small>Launch Date: 29 Aug 2023</small>
+                  </div>
+                </div>
+                <div class="card p-3">
+                  <img src="./images/img (10).png" alt="" />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-price">$ 11, 499</p>
+                    <small>Launch Date: 29 Aug 2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-lg-block d-none">
+          <div class="bg-white rounded-2">
+            <h4 class="title">Recent News</h4>
+            <div class="d-flex gap-3 news mt-3">
+              <a href="">
+                <img
+                  src="./assets/image/Apple-iPhone-12-Transparent-Background.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+              <div>
+                <a href="" class="hedline"
+                  >Lorem, ipsum dolor sit amet consectetur...</a
+                >
+                <p class="publish">
+                  <span>By Mostafizur </span> <span>|</span
+                  ><span>1 Day ago</span>
+                </p>
+              </div>
+            </div>
+            <div class="d-flex gap-3 news mt-3">
+              <a href="">
+                <img
+                  src="./assets/image/Apple-iPhone-12-Transparent-Background.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+              <div>
+                <a href="" class="hedline"
+                  >Lorem, ipsum dolor sit amet consectetur...</a
+                >
+                <p class="publish">
+                  <span>By Mostafizur </span> <span>|</span
+                  ><span>1 Day ago</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------Popular Brands -->
+    <section class="container-xl mt_7 brands">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div class="bg-white rounded-2">
+            <h4 class="title">Explore Mobiles By Popular Brands</h4>
+            <div class="px-3 py-3 overflow-x-auto list">
+              <ul class="d-flex gap-4">
+                <li>
+                  <a href="" class="active">Mobiles</a>
+                </li>
+                <li>
+                  <a href="">Laptops</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+                <li>
+                  <a href="">Tablets</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row px-3 py-3 brands-items">
+              <div class="col-md-3 col-sm-3 box">
+                <a href="">
+                  <div class="text-center">
+                    <img src="./assets/icons/5 (1).png" alt="" />
+                    <p>acer mobile</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 box">
+                <a href="">
+                  <div class="text-center">
+                    <img src="./assets/icons/5 (1).png" alt="" />
+                    <p>acer mobile</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 box">
+                <a href="">
+                  <div class="text-center">
+                    <img src="./assets/icons/5 (1).png" alt="" />
+                    <p>acer mobile</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 box">
+                <a href="">
+                  <div class="text-center">
+                    <img src="./assets/icons/5 (1).png" alt="" />
+                    <p>acer mobile</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 box">
+                <a href="">
+                  <div class="text-center">
+                    <img src="./assets/icons/5 (1).png" alt="" />
+                    <p>acer mobile</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 box">
+                <a href="">
+                  <div class="text-center">
+                    <img src="./assets/icons/5 (1).png" alt="" />
+                    <p>acer mobile</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 box">
+                <a href="">
+                  <div class="text-center">
+                    <img src="./assets/icons/5 (1).png" alt="" />
+                    <p>acer mobile</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 box">
+                <a href="">
+                  <div class="text-center">
+                    <img src="./assets/icons/5 (1).png" alt="" />
+                    <p>acer mobile</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-lg-block d-none"></div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/owl/owl.carousel.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
