@@ -9,7 +9,7 @@ $(document).ready(function () {
         items: 1,
         nav: false,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
     });
     $(".latest_device_carousel").owlCarousel({
