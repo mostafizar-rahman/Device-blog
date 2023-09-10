@@ -17,16 +17,19 @@ a {
   text-decoration: none;
 }
 
-.mt_7 {
-  margin-top: 70px;
+.mt_4 {
+  margin-top: 40px;
 }
-
 .title {
+  border-bottom: 1px solid #ddd;
+  padding: 16px 15px;
+}
+.title h4 {
   font-size: 18px;
   font-weight: 600;
-  padding: 16px 15px;
+  margin-bottom: 0;
+
   color: #111111;
-  border-bottom: 1px solid #ddd;
 }
 
 .owl-carousel .owl-dots.disabled {
@@ -170,8 +173,52 @@ nav .btn.close-btn {
   top: 10px;
 }
 
-/* ------------ Category */
+/* ---------- Banner */
+.banner {
+  background-color: #3782ce;
+  padding: 25px 0;
+}
+.banner .owl-nav {
+  display: none !important;
+}
+.banner .content {
+  max-width: 500px;
+  width: 100%;
+}
+.banner .content h2 {
+  font-size: 55px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.banner .content p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.banner .content a {
+  max-width: 220px;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid #ffffff;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_item img {
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 
+/* ------------ Category */
 .category .box {
   width: 75px;
   height: 75px;
@@ -189,14 +236,8 @@ nav .btn.close-btn {
   font-size: 14px;
   margin-top: 10px;
 }
-.category .btn {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
-  font-size: 15px;
-  width: 150px;
-}
 
-/* ------------ Latest Mobiles */
+/* ------------ Latest Device, Popular Device */
 .list::-webkit-scrollbar {
   display: none;
 }
@@ -220,27 +261,32 @@ nav .btn.close-btn {
   color: #3782ce;
 }
 
-.latest .card img {
+.latest .card img,
+.popular .card img{
   max-width: 150px;
   max-height: 200px;
   width: 100%;
   object-fit: contain;
   margin: auto;
 }
-.latest .card-body {
+.latest .card-body,
+.popular .card-body {
   padding: 0;
   margin-top: 30px;
 }
-.latest .card-title {
+.latest .card-title,
+.popular .card-title {
   font-size: 16px;
   font-weight: 600;
 }
-.latest .card-price {
+.latest .card-price,
+.popular .card-price {
   color: #3782ce;
   font-weight: 500;
   margin-bottom: 0;
 }
-.latest .card-body small {
+.latest .card-body small,
+.popular .card-body small {
   font-size: 13px;
   color: #444444;
 }
@@ -255,6 +301,7 @@ nav .btn.close-btn {
   color: #444444;
 }
 
+/* ------------ Filter by brands */
 .brands .box {
   border-right: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
@@ -274,6 +321,112 @@ nav .btn.close-btn {
   font-size: 13px;
   color: #444444;
   margin-bottom: 0;
+}
+
+/* ------------ comparison device */
+.comparison .vs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #3782ce;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.comparison .center-border {
+  border-right: 1px solid #dddddd;
+}
+.comparison .card-wapper {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.comparison .card {
+  border: none;
+}
+.comparison .card-body {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.comparison .card img {
+  max-width: 180px;
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.comparison .card-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+.comparison .card-price {
+  font-size: 13px;
+  color: #444444;
+  margin-bottom: 0;
+}
+.comparison .card-footer {
+  border-top: 1px solid #dddddd;
+}
+.comparison .card-footer a {
+  color: #333333;
+  font-size: 14px;
+  text-align: center;
+
+  display: inline-block;
+}
+
+/*  --------- Filter by Features   */
+.features .box {
+  border: 1px solid #3782ce;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.features .box a {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*  --------- Filter by Price   */
+.price-filter .scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.price-filter .scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.price-filter .card-heading {
+  background-color: #3b89d823;
+}
+.price-filter .card-heading b {
+  color: #333333;
+}
+.price-filter .card {
+  width: 260px;
+  margin-right: 20px;
+}
+.price-filter img {
+  width: 90px;
+  height: 70px;
+  object-fit: contain;
+}
+.price-filter li {
+  margin: 18px 0;
+}
+.price-filter li a {
+  color: #333333;
+  font-size: 15px;
+}
+.price-filter li a:hover {
+  color: #3782ce;
 }
 
 @media screen and (max-width: 970px) {

@@ -32,7 +32,27 @@ $(document).ready(function () {
         autoplay: false,
         autoplayTimeout: 5000,
     });
-    $(".popular_mobile_carousel").owlCarousel({
+    $(".popular_device_carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 4,
+            }
+        },
+        nav: true,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+    });
+    $(".comparison_device_carousel").owlCarousel({
         loop: true,
         margin: 20,
         responsiveClass: true,
@@ -44,7 +64,7 @@ $(document).ready(function () {
                 items: 2,
             },
             1000: {
-                items: 3,
+                items: 2,
             }
         },
         nav: true,
