@@ -1,4 +1,15 @@
+const mobileItem = document.querySelectorAll(".mobile-item")
+const dropMenu = document.querySelectorAll(".drop-menu")
 
+mobileItem.forEach((element, index) => {
+    element.addEventListener("click", function () {
+        dropMenu.forEach((menu, id) => {
+            if(index === id){
+                menu.classList.toggle("active-drop-menu")
+            }
+        })
+    })
+});
 
 
 $(document).ready(function () {
@@ -72,6 +83,6 @@ $(document).ready(function () {
         autoplay: false,
         autoplayTimeout: 5000,
     });
-    
+
 
 });  

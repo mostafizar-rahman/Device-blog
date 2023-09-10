@@ -508,6 +508,7 @@ nav .btn.close-btn {
     overflow-y: auto;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
     transition: all 0.3s ease;
+    z-index: 1000;
   }
   /* custom scroll bar */
   ::-webkit-scrollbar {
@@ -548,27 +549,10 @@ nav .btn.close-btn {
     box-shadow: none;
     transition: all 0.3s ease;
   }
-  #showDrop1:checked ~ .drop-menu {
-    max-height: 100%;
+  .active-drop-menu{
+    max-height: 100% !important;
   }
-  #showDrop2:checked ~ .drop-menu {
-    max-height: 100%;
-  }
-  #showDrop3:checked ~ .drop-menu {
-    max-height: 100%;
-  }
-  #showDrop4:checked ~ .drop-menu {
-    max-height: 100%;
-  }
-  #showDrop5:checked ~ .drop-menu {
-    max-height: 100%;
-  }
-  #showDrop6:checked ~ .drop-menu {
-    max-height: 100%;
-  }
-  #showDrop7:checked ~ .drop-menu {
-    max-height: 100%;
-  }
+
 
   .nav-links .desktop-item {
     display: none;
@@ -594,6 +578,8 @@ nav .btn.close-btn {
     font-size: 17px;
   }
 }
+
+
 nav input {
   display: none;
 }
