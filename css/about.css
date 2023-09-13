@@ -1,0 +1,11 @@
+.about_wapper{
+    max-width: 700px;
+}
+.about_wapper p{
+    color: #444444;
+    font-size: 15px;
+}
+.about_wapper h4{
+    font-weight: 600;
+    font-size: 22px;
+}

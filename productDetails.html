@@ -64,7 +64,7 @@
             <label for="close-btn" class="btn close-btn"
               ><i class="fa-solid fa-xmark"></i
             ></label>
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li>
               <a href="#" class="desktop-item"
                 >Mobiles <i class="fa-solid fa-caret-down"></i>
@@ -75,8 +75,8 @@
                 <i class="fa-solid fa-caret-down"></i>
               </label>
               <ul class="drop-menu">
-                <li><a href="./mobiles.html">Oppo</a></li>
-                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="./oppo.html">Oppo</a></li>
+                <li><a href="./compare.html">Compare</a></li>
                 <li><a href="#">Drop menu 3</a></li>
                 <li><a href="#">Drop menu 4</a></li>
               </ul>
@@ -189,23 +189,21 @@
       <div class="bg-white rounded-2 px-4 py-4">
         <div class="row">
           <div class="col-md-4">
-            <div class="">
-             
-              <img
-                class=" img-fluid bg-white"
-                src="./images/img (10).png"
-              />
+            <div class="d-flex justify-content-center">
+              <img class="thumbnail mx-auto" src="./images/img (10).png" />
             </div>
           </div>
           <div class="col-md-8">
-            <div class="">
+            <div>
               <div class="title_wapper">
-                <h1 class="name mb-0">Xiaomi Redmi Note 9</h1>
-                <p class="update d-flex gap-2 align-items-center">
-                  <small>Updated: 9th September 2023</small>|<small
-                    ><a href="">27006 Reviews</a></small
-                  >
-                </p>
+                <div class="text-center text-md-start mt-4 mt-md-0">
+                  <h1 class="name mb-0">Xiaomi Redmi Note 9</h1>
+                  <p class="update d-flex gap-2 align-items-center justify-content-center justify-content-md-start ">
+                    <small>Updated: 9th September 2023</small>|<small
+                      ><a href="">27006 Reviews</a></small
+                    >
+                  </p>
+                </div>
                 <div class="d-flex justify-content-between mt-4">
                   <div>
                     <a href="">
@@ -298,7 +296,7 @@
             </div>
           </div>
           <div class="col-md-5 mt-4 mt-md-0">
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-3">
               <div class="d-flex align-items-center rating_star">
                 5<i class="fa-solid fa-star"></i>
               </div>
@@ -306,8 +304,8 @@
                 <span class="progress-bar" style="width: 75%">75%</span>
               </div>
             </div>
-            <!-- end 5 -->
-            <div class="d-flex align-items-center gap-3">
+
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-3">
               <div class="d-flex align-items-center rating_star">
                 4<i class="fa-solid fa-star"></i>
               </div>
@@ -315,8 +313,8 @@
                 <span class="progress-bar" style="width: 60%">60%</span>
               </div>
             </div>
-            <!-- end 4 -->
-            <div class="d-flex align-items-center gap-3">
+
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-3">
               <div class="d-flex align-items-center rating_star">
                 3<i class="fa-solid fa-star"></i>
               </div>
@@ -324,7 +322,7 @@
                 <span class="progress-bar" style="width: 25%">25%</span>
               </div>
             </div>
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-3">
               <div class="d-flex align-items-center rating_star">
                 2<i class="fa-solid fa-star"></i>
               </div>
@@ -332,8 +330,8 @@
                 <span class="progress-bar" style="width: 40%">40%</span>
               </div>
             </div>
-            <!-- end 3 -->
-            <div class="d-flex align-items-center gap-3">
+
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
               <div class="d-flex align-items-center rating_star">
                 1<i class="fa-solid fa-star"></i>
               </div>
@@ -366,8 +364,8 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      New message
+                    <h1 class="modal-title fs-6" id="exampleModalLabel">
+                      Write Review
                     </h1>
                     <button
                       type="button"
@@ -377,7 +375,67 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <form></form>
+                    <div class="">
+                      <form class="form-horizontal" action="" method="post">
+                        <input
+                          id="name"
+                          name="name"
+                          type="text"
+                          placeholder="Your name"
+                        />
+
+                        <input
+                          id="email"
+                          name="email"
+                          type="text"
+                          placeholder="Your email"
+                        />
+
+                        <textarea
+                          id="message"
+                          name="message"
+                          placeholder="Please enter your feedback here..."
+                          rows="5"
+                        ></textarea>
+
+                        <div>
+                          <div
+                            class="starrating risingstar d-flex justify-content-end flex-row-reverse"
+                          >
+                            <input
+                              type="radio"
+                              id="star5"
+                              name="rating"
+                              value="5"
+                            /><label for="star5" title="5 star"></label>
+                            <input
+                              type="radio"
+                              id="star4"
+                              name="rating"
+                              value="4"
+                            /><label for="star4" title="4 star"></label>
+                            <input
+                              type="radio"
+                              id="star3"
+                              name="rating"
+                              value="3"
+                            /><label for="star3" title="3 star"></label>
+                            <input
+                              type="radio"
+                              id="star2"
+                              name="rating"
+                              value="2"
+                            /><label for="star2" title="2 star"></label>
+                            <input
+                              type="radio"
+                              id="star1"
+                              name="rating"
+                              value="1"
+                            /><label for="star1" title="1 star"></label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                   <div class="modal-footer d-flex justify-content-start">
                     <button type="button">Submit</button>

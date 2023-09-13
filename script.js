@@ -99,6 +99,23 @@ $(document).ready(function () {
         autoplayTimeout: 5000,
     });
 
+    $(document).ready(function () {
+        $("#input-1").rating({
+          min: 0,
+          max: 6,
+          step: 0.1,
+          stars: 6,
+          // showCaption:false,
+          starCaptions: function (val) {
+            if (val < 3) {
+              return "Low: " + val + " stars";
+            } else {
+              return "High: " + val + " stars";
+            }
+          }
+        });
+      });
+      
 
 
     // $('.example').extm({

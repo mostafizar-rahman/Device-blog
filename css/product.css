@@ -12,12 +12,20 @@
   color: #333333;
 }
 
+.device_list .brands_name h1 {
+  font-size: 29px;
+}
+.device_list .brands_name small {
+  font-size: 14px;
+  color: #444444;
+}
 .device_list img {
   width: 150px;
 }
 .device_list .name {
   font-size: 18px;
   margin-bottom: 0;
+  color: #000000;
 }
 .device_list .version {
   font-size: 13px;
@@ -55,15 +63,15 @@
 @media (max-width: 767px) {
   .filter_list {
     height: 0;
-    margin-top: 0 !important; 
-  
+    margin-top: 0 !important;
+
     visibility: hidden;
   }
- .filter_active {
+  .filter_active {
     height: 100%;
     /* max-height: 500px !important ; */
-    margin-top: 20px !important; 
+    margin-top: 20px !important;
     visibility: visible;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 }
