@@ -13,6 +13,16 @@ mobileItem.forEach((element, index) => {
 });
 
 
+// ------- Menu for news page
+const menuIcon = document.querySelector(".menu_icon");
+const mobileMenu = document.querySelector(".mobile_menu");
+menuIcon.addEventListener("click", () => {
+    console.log("click")
+    mobileMenu.classList.toggle("active");
+});
+
+
+
 // ------- 
 function filterToggle(){
     document.querySelector(".filter_list").classList.toggle("filter_active")
@@ -23,10 +33,6 @@ function filterToggle(){
 
 
 $(document).ready(function () {
-
-
-
-
 
     $(".banner").owlCarousel({
         loop: true,
@@ -99,22 +105,7 @@ $(document).ready(function () {
         autoplayTimeout: 5000,
     });
 
-    $(document).ready(function () {
-        $("#input-1").rating({
-          min: 0,
-          max: 6,
-          step: 0.1,
-          stars: 6,
-          // showCaption:false,
-          starCaptions: function (val) {
-            if (val < 3) {
-              return "Low: " + val + " stars";
-            } else {
-              return "High: " + val + " stars";
-            }
-          }
-        });
-      });
+  
       
 
 

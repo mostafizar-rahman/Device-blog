@@ -1,0 +1,157 @@
+a {
+  color: #000000;
+}
+
+/* ------------ Header */
+.header a {
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.header a:hover {
+  color: #3782ce;
+}
+
+.header .mobile_menu {
+  transition: all 0.5s;
+}
+
+/* ----------- Top News */
+
+.top_news {
+  overflow: hidden;
+  border-radius: 7px;
+}
+.top_news img {
+  height: 450px;
+  object-fit: contain;
+  transition: all 0.5s;
+  width: 100%;
+}
+.top_news_left_side img,
+.top_news_right_side img {
+  height: 200px;
+  width: 100%;
+}
+
+.top_news .content {
+  bottom: 0px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.327);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+}
+
+.top_news .content b {
+  color: #ffffff;
+  font-size: 19px;
+  transition: all 0.5s;
+}
+.top_news .content small {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.top_news:hover img {
+  transform: scale(1.1);
+}
+
+/* --------- */
+.news_card img {
+  height: 170px;
+  object-fit: contain;
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.news_card .news_title,
+.tranding_news .news_title {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+}
+.news_card:hover .news_title {
+  color: #3782ce;
+}
+.news_card_body small {
+  display: block;
+  font-size: 12px;
+}
+.news_card_body .author {
+  font-size: 12px;
+  font-weight: 500;
+  color: #444444;
+}
+.news_card p {
+  font-size: 14px;
+  color: #444444;
+  margin-top: 12px;
+}
+
+.tranding_heading {
+  font-size: 22px;
+  color: #3782ce;
+  font-weight: 600;
+  border-bottom: 2px solid #3782ce;
+  padding: 8px 0;
+}
+.tranding_news img {
+  height: 100px;
+  width: 150px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border-radius: 7px;
+  padding: 5px;
+}
+.tranding_news small {
+  font-size: 12px;
+}
+.tranding_news .author {
+  font-size: 13px;
+  font-weight: 500;
+  color: #444444;
+}
+.tranding_news:hover .news_title {
+  color: #3782ce;
+}
+
+/* ----- pagination */
+.paginations .page-item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.paginations .active {
+  background-color: #3782ce;
+  color: #ffffff;
+  border: 1px solid #3782ce;
+}
+
+/* ------- Responsive */
+@media (max-width: 972px) {
+  .mobile_menu {
+    position: absolute;
+    left: -100%;
+    top: 0%;
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 10px;
+    min-width: 50%;
+    line-height: 40px;
+    z-index: 1000;
+  }
+  .active {
+    left: 0;
+  }
+}
