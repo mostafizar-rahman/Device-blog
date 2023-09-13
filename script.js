@@ -1,10 +1,11 @@
+// -------- Menu Dropdown
 const mobileItem = document.querySelectorAll(".mobile-item")
 const dropMenu = document.querySelectorAll(".drop-menu")
 
 mobileItem.forEach((element, index) => {
     element.addEventListener("click", function () {
         dropMenu.forEach((menu, id) => {
-            if(index === id){
+            if (index === id) {
                 menu.classList.toggle("active-drop-menu")
             }
         })
@@ -12,7 +13,21 @@ mobileItem.forEach((element, index) => {
 });
 
 
+// ------- 
+function filterToggle(){
+    document.querySelector(".filter_list").classList.toggle("filter_active")
+}
+
+
+
+
+
 $(document).ready(function () {
+
+
+
+
+
     $(".banner").owlCarousel({
         loop: true,
         margin: 10,
@@ -84,5 +99,30 @@ $(document).ready(function () {
         autoplayTimeout: 5000,
     });
 
+
+
+    // $('.example').extm({
+
+    //     zoomElement: false,
+
+    //     imageSrc: $(this).attr('src'),
+
+    //     squareOverlay: true,
+
+    //     position: 'right',
+
+    //     rightPad: 0,
+
+    //     lazy: false,
+
+    //     zoomLevel: 1,
+
+    //     zoomSize: 1000,
+
+    //     loadingText: false,
+
+    //     loadingImage: false,
+
+    // });
 
 });  

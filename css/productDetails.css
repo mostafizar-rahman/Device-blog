@@ -1,0 +1,129 @@
+.title_wapper .update {
+  font-size: 14px;
+  color: #444444;
+}
+.title_wapper .update a {
+  color: #3782ce;
+}
+.title_wapper .store_btn {
+  background-color: #3782ce;
+  color: #ffffff;
+  padding: 6px 15px;
+  font-size: 14px;
+}
+.title_wapper .price {
+  font-size: 18px;
+  font-weight: 600;
+}
+.title_wapper button {
+  border: 1px solid #444444;
+  padding: 3px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #444444;
+  cursor: pointer;
+  outline: none;
+}
+
+.title_wapper .active_btn {
+  border: 1.5px solid #3782ce;
+  color: #3782ce;
+  font-weight: 500;
+}
+
+.title_wapper .features {
+  width: 100%;
+}
+.title_wapper .features ul {
+  margin-top: 8px;
+}
+.title_wapper .features li {
+  margin-bottom: 0px;
+}
+.title_wapper .features li small {
+  font-size: 12px;
+}
+.title_wapper .features b {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* ----------- reviews_section */
+.reviews_section .overview small {
+  color: #444444;
+  font-size: 13px;
+}
+.reviews_section .overview sub{
+  color: #666;
+  font-size: 18px;
+}
+.reviews_section .rating_star{
+  width: 20px;
+
+}
+.reviews_section .progress {
+  height: 25px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.reviews_section .progress-bar {
+  background-color: #3782ce;
+  font-size: 17px;
+}
+
+.reviews_section .modal_btn {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.reviews_section .profile img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.reviews_section .profile h6 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.reviews_section .profile p {
+  font-size: 14px;
+  color: #444444;
+}
+
+/* ------------- specifications */
+.specifications .left_side {
+  width: 270px;
+}
+.specifications .left_side h4 {
+  font-weight: 200;
+  font-size: 25px;
+}
+.specifications .right_side {
+  /* min-width: 200px; */
+  width: 100%;
+}
+.specifications .right_side li {
+  line-height: 35px;
+}
+.specifications .right_side .name {
+  font-weight: 500;
+  /* min-width: 20%; */
+  min-width: 170px;
+  font-size: 15px;
+}
+.specifications .right_side .features {
+  min-width: 60%;
+  width: 100%;
+  font-weight: 300;
+  font-size: 15px;
+}

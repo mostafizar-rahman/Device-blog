@@ -29,7 +29,17 @@ a {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 0;
-
+  color: #111111;
+}
+.sub_title {
+  /* border-bottom: 1px solid #ddd; */
+  padding: 5px 15px;
+  /* display: inline-block; */
+}
+.sub_title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
   color: #111111;
 }
 
@@ -549,10 +559,9 @@ nav .btn.close-btn {
     box-shadow: none;
     transition: all 0.3s ease;
   }
-  .active-drop-menu{
+  .active-drop-menu {
     max-height: 100% !important;
   }
-
 
   .nav-links .desktop-item {
     display: none;
@@ -579,13 +588,11 @@ nav .btn.close-btn {
   }
 }
 
-
 nav input {
   display: none;
 }
 
 @media (max-width: 768px) {
-  
   .banner .content h2 {
     font-size: 40px;
   }
