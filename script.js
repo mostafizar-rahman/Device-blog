@@ -16,10 +16,12 @@ mobileItem.forEach((element, index) => {
 // ------- Menu for news page
 const menuIcon = document.querySelector(".menu_icon");
 const mobileMenu = document.querySelector(".mobile_menu");
-menuIcon.addEventListener("click", () => {
-    console.log("click")
-    mobileMenu.classList.toggle("active");
-});
+if(menuIcon){
+    menuIcon.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+    });
+}
+
 
 
 
@@ -41,7 +43,7 @@ $(document).ready(function () {
         items: 1,
         nav: false,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
     });
     $(".latest_device_carousel").owlCarousel({
@@ -105,32 +107,5 @@ $(document).ready(function () {
         autoplayTimeout: 5000,
     });
 
-  
-      
-
-
-    // $('.example').extm({
-
-    //     zoomElement: false,
-
-    //     imageSrc: $(this).attr('src'),
-
-    //     squareOverlay: true,
-
-    //     position: 'right',
-
-    //     rightPad: 0,
-
-    //     lazy: false,
-
-    //     zoomLevel: 1,
-
-    //     zoomSize: 1000,
-
-    //     loadingText: false,
-
-    //     loadingImage: false,
-
-    // });
 
 });  

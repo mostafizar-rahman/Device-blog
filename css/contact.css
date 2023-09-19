@@ -10,7 +10,7 @@
   justify-content: center;
   margin: auto;
 }
-.social {
+.contact .social {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,7 @@
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
 }
 
-.contact-box {
+.contact .contact-box {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
   box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.1);
   /* text-align: center; */
 }
-.c-heading h1 {
+.contact .heading h1 {
   color: #333333;
   font-size: 40px;
   font-weight: lighter;
@@ -37,7 +37,7 @@
   padding: 0px;
   text-align: center;
 }
-.c-heading p {
+.contact .heading p {
   color: #333333;
   font-size: 13px;
   font-weight: lighter;
@@ -45,14 +45,14 @@
   padding: 0px;
   text-align: center;
 }
-.c-inputs {
+.contact .inputs {
   margin: 15px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.c-inputs input {
+.contact .inputs input {
   max-width: 400px;
   width: 100%;
   height: 45px;
@@ -67,7 +67,7 @@
   display: flex;
   font-size: 14px;
 }
-.c-inputs textarea {
+.contact .inputs textarea {
   width: 400px;
   height: 200px !important;
   outline: none;
@@ -78,7 +78,7 @@
   box-sizing: border-box;
   font-size: 14px;
 }
-.c-inputs button {
+.contact .inputs button {
   width: 200px;
   height: 40px;
   background-color: #3782ce;
@@ -91,53 +91,46 @@
   letter-spacing: 1px;
 }
 
-.c-inputs button:active {
+.contact .inputs button:active {
   transform: scale(1.02);
 }
-.map {
+.contact .map {
   filter: grayscale(0.2);
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   border: 2px solid #ffffff;
   width: 500px;
 }
 @media (max-width: 1100px) {
-  .map {
+  .contact .map {
     width: 400px;
   }
 }
 @media (max-width: 950px) {
-  .c-inputs textarea {
+  .contact .inputs textarea {
     width: 300px;
   }
-  .social {
+  .contact .social {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .map {
+  .contact .map {
     display: none;
   }
-  .social {
+  .contact .social {
     display: flex;
   }
 }
 @media (max-width: 450px) {
-  .social {
+  .contact .social {
     display: none;
   }
-  .contact-box {
+  .contact .contact-box {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
   }
-  #contact {
-    position: static;
-    transform: translate(0, 0);
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-  }
-  .c-heading h1 {
+  .contact .heading h1 {
     font-size: 2.2rem;
     text-align: center;
   }
